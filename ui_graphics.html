@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.18">
+<meta name="generator" content="Asciidoctor 2.0.17">
 <title>UI Graphics</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -84,10 +84,10 @@ code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;
 ul,ol,dl{line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
 ul,ol{margin-left:1.5em}
 ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0}
+ul.square li ul,ul.circle li ul,ul.disc li ul{list-style:inherit}
+ul.square{list-style-type:square}
 ul.circle{list-style-type:circle}
 ul.disc{list-style-type:disc}
-ul.square{list-style-type:square}
-ul.circle ul:not([class]),ul.disc ul:not([class]),ul.square ul:not([class]){list-style:inherit}
 ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
 dl dt{margin-bottom:.3125em;font-weight:bold}
 dl dd{margin-bottom:1.25em}
@@ -435,6 +435,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 #footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="article">
 <div id="header">
@@ -1024,7 +1025,7 @@ file format.</p>
 <p>::
   To load the palette in Adobe Photoshop, open the "Swatches" palette
   and choose "Load Swatches&#8230;&#8203;"; then navigate to where you saved the
-  <a href="https://git.eclipse.org/c/platform/eclipse.platform.images.git/plain/org.eclipse.images/tools/eclipse-style_palette.aco" class="bare">https://git.eclipse.org/c/platform/eclipse.platform.images.git/plain/org.eclipse.images/tools/eclipse-style_palette.aco</a>
+  <a href="https://git.eclipse.org/c/platform/eclipse.platform.images.git/plain/org.eclipse.images/tools/eclipse-style_palette.aco" class="bare">git.eclipse.org/c/platform/eclipse.platform.images.git/plain/org.eclipse.images/tools/eclipse-style_palette.aco</a>
   "eclipse-style_palette.aco"] palette.</p>
 </div>
 <div class="paragraph">
@@ -1076,11 +1077,11 @@ list.</p>
   This information replaces that provided in the Eclipse UI Guidelines
   2.1, in the section titled “Visual Design – Icon Palettes” (Guidelines
   2.2-2.4):
-  <a href="http://www.eclipse.org/articles/Article-UI-Guidelines/Index.html" class="bare">http://www.eclipse.org/articles/Article-UI-Guidelines/Index.html</a></p>
+  <a href="http://www.eclipse.org/articles/Article-UI-Guidelines/Index.html" class="bare">www.eclipse.org/articles/Article-UI-Guidelines/Index.html</a></p>
 </div>
 <div class="paragraph">
 <p>::
-  The GIMP User Manual is available online at: <a href="http://www.gimp.org/docs/" class="bare">http://www.gimp.org/docs/</a></p>
+  The GIMP User Manual is available online at: <a href="http://www.gimp.org/docs/" class="bare">www.gimp.org/docs/</a></p>
 </div>
 </div>
 </div>
@@ -1373,7 +1374,7 @@ categories of color are applied to wizard banner graphics.</p>
 <table>
 <tr>
 <td class="icon">
-<div class="title">Tip</div>
+<i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
 <strong class="guideline2.1">Guideline 2.1 (3.x update)</strong><br>
@@ -1386,7 +1387,7 @@ Follow the visual style established for Eclipse UI graphics.
 <table>
 <tr>
 <td class="icon">
-<div class="title">Tip</div>
+<i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
 <strong class="guideline2.2">Guideline 2.2 (3.x update)</strong><br>
@@ -1461,7 +1462,7 @@ download the "core_wizard_concepts.ai" and the
 <table>
 <tr>
 <td class="icon">
-<div class="title">Tip</div>
+<i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
 <strong class="guideline2.3">Guideline 2.3</strong><br>
@@ -1519,7 +1520,7 @@ elements and promote consistency throughout the user interface.</p>
 <table>
 <tr>
 <td class="icon">
-<div class="title">Tip</div>
+<i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
 <strong class="guideline2.4">Guideline 2.4</strong><br>
@@ -1579,7 +1580,7 @@ color version of these icons can be found under
 <table>
 <tr>
 <td class="icon">
-<div class="title">Note</div>
+<i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
 It is important to implement the graphical versions of the
@@ -1701,7 +1702,7 @@ similar elements.</p>
 <table>
 <tr>
 <td class="icon">
-<div class="title">Note</div>
+<i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
 All instructions for creating visual elements are based on using
@@ -1716,7 +1717,7 @@ exactly as described.
 <table>
 <tr>
 <td class="icon">
-<div class="title">Tip</div>
+<i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
 <strong class="guideline2.5">Guideline 2.5</strong><br>
@@ -1900,7 +1901,7 @@ cutting wizard banner graphics.</p>
 <table>
 <tr>
 <td class="icon">
-<div class="title">Tip</div>
+<i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
 <strong class="guideline2.6">Guideline 2.6</strong><br>
@@ -1955,7 +1956,7 @@ images.</p>
 PNG was created to improve upon and replace the GIF format, as an
 image-file format not requiring a patent license. PNG is pronounced
 "ping" (/pɪŋ/ in IPA), but can be spoken "P-N-G" (as described at
-<a href="http://en.wikipedia.org/wiki/PNG" class="bare">http://en.wikipedia.org/wiki/PNG</a>). One of the great values of PNG format
+<a href="http://en.wikipedia.org/wiki/PNG" class="bare">en.wikipedia.org/wiki/PNG</a>). One of the great values of PNG format
 is its support for alphas or transparency, allowing bleed through of the
 background on which these graphics sit.</p>
 </div>
@@ -2106,10 +2107,10 @@ icons, including desktop, treeview, and menu icons.</p>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="http://developer.apple.com/documentation/UserExperience/Conceptual/OSXHIGuidelines/index.html" class="bare">http://developer.apple.com/documentation/UserExperience/Conceptual/OSXHIGuidelines/index.html</a>?</p>
+<p><a href="http://developer.apple.com/documentation/UserExperience/Conceptual/OSXHIGuidelines/index.html" class="bare">developer.apple.com/documentation/UserExperience/Conceptual/OSXHIGuidelines/index.html</a>?</p>
 </li>
 <li>
-<p><a href="http://www.oreillynet.com/pub/a/mac/2001/05/24/aqua_design.html?page=1" class="bare">http://www.oreillynet.com/pub/a/mac/2001/05/24/aqua_design.html?page=1</a></p>
+<p><a href="http://www.oreillynet.com/pub/a/mac/2001/05/24/aqua_design.html?page=1" class="bare">www.oreillynet.com/pub/a/mac/2001/05/24/aqua_design.html?page=1</a></p>
 </li>
 </ul>
 </div>
@@ -2119,7 +2120,7 @@ icons, including desktop, treeview, and menu icons.</p>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="http://www.altuit.com/webs/altuit2/StandaloneBuilderTutorial/BuildingIconsforMacOSXandWindowsXP.htm" class="bare">http://www.altuit.com/webs/altuit2/StandaloneBuilderTutorial/BuildingIconsforMacOSXandWindowsXP.htm</a></p>
+<p><a href="http://www.altuit.com/webs/altuit2/StandaloneBuilderTutorial/BuildingIconsforMacOSXandWindowsXP.htm" class="bare">www.altuit.com/webs/altuit2/StandaloneBuilderTutorial/BuildingIconsforMacOSXandWindowsXP.htm</a></p>
 </li>
 </ul>
 </div>
@@ -2130,7 +2131,7 @@ icons, including desktop, treeview, and menu icons.</p>
 <table>
 <tr>
 <td class="icon">
-<div class="title">Tip</div>
+<i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
 <strong class="guideline2.7">Guideline 2.7</strong><br>
@@ -2966,7 +2967,7 @@ Placement</a>. The following graphic types are described below:</p>
 <table>
 <tr>
 <td class="icon">
-<div class="title">Tip</div>
+<i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
 <strong class="guideline2.8">Guideline 2.8</strong><br>
@@ -4784,7 +4785,7 @@ image in place</strong></p></td>
 <table>
 <tr>
 <td class="icon">
-<div class="title">Tip</div>
+<i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
 <strong class="guideline2.9">Guideline 2.9</strong><br>
@@ -4797,7 +4798,7 @@ Follow the specific size specifications for each type of graphic.
 <table>
 <tr>
 <td class="icon">
-<div class="title">Tip</div>
+<i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
 <strong class="guideline2.10">Guideline 2.10</strong><br>
@@ -4957,7 +4958,7 @@ again. (See F)<br></p>
 <table>
 <tr>
 <td class="icon">
-<div class="title">Tip</div>
+<i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
 <strong class="guideline2.11">Guideline 2.11</strong><br>
@@ -5034,7 +5035,7 @@ suffix. For example, file_pal, file_pal24, file_pal32, where
 <table>
 <tr>
 <td class="icon">
-<div class="title">Tip</div>
+<i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
 <strong class="guideline2.12">Guideline 2.12</strong><br>
@@ -5048,7 +5049,7 @@ Interface becomes "newint".
 <table>
 <tr>
 <td class="icon">
-<div class="title">Tip</div>
+<i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
 <strong class="guideline2.13">Guideline 2.13</strong><br>
@@ -5061,7 +5062,7 @@ Use lower case characters in your file names, e.g., DTD becomes "dtd".
 <table>
 <tr>
 <td class="icon">
-<div class="title">Tip</div>
+<i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
 <strong class="guideline2.14">Guideline 2.14</strong><br>
@@ -5075,7 +5076,7 @@ count as a character).
 <table>
 <tr>
 <td class="icon">
-<div class="title">Tip</div>
+<i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
 <strong class="guideline2.15">Guideline 2.15</strong><br>
@@ -5090,7 +5091,7 @@ multiple sizes.
 <table>
 <tr>
 <td class="icon">
-<div class="title">Tip</div>
+<i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
 <strong class="guideline2.16">Guideline 2.16</strong><br>
@@ -5222,7 +5223,7 @@ moving views within the application.</p>
 <table>
 <tr>
 <td class="icon">
-<div class="title">Tip</div>
+<i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
 <strong class="guideline2.17">Guideline 2.17</strong><br>
@@ -5235,7 +5236,7 @@ Follow the predefined directory structure and naming convention.
 <table>
 <tr>
 <td class="icon">
-<div class="title">Tip</div>
+<i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
 <strong class="guideline2.18">Guideline 2.18</strong><br>
@@ -5248,7 +5249,7 @@ Keep the original directory names provided.
 <table>
 <tr>
 <td class="icon">
-<div class="title">Tip</div>
+<i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
 <strong class="guideline2.19">Guideline 2.19</strong><br>
@@ -5262,7 +5263,7 @@ in one, or few, first level user interface directories.
 <table>
 <tr>
 <td class="icon">
-<div class="title">Tip</div>
+<i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
 <strong class="guideline2.20">Guideline 2.20</strong><br>
@@ -5278,7 +5279,7 @@ Use the active, enabled, and disabled states provided.
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-12-21 21:08:13 UTC
+Last updated 2022-12-22 10:13:55 UTC
 </div>
 </div>
 </body>

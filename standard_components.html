@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.18">
+<meta name="generator" content="Asciidoctor 2.0.17">
 <title>Standard Components</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -84,10 +84,10 @@ code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;
 ul,ol,dl{line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
 ul,ol{margin-left:1.5em}
 ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0}
+ul.square li ul,ul.circle li ul,ul.disc li ul{list-style:inherit}
+ul.square{list-style-type:square}
 ul.circle{list-style-type:circle}
 ul.disc{list-style-type:disc}
-ul.square{list-style-type:square}
-ul.circle ul:not([class]),ul.disc ul:not([class]),ul.square ul:not([class]){list-style:inherit}
 ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
 dl dt{margin-bottom:.3125em;font-weight:bold}
 dl dd{margin-bottom:1.25em}
@@ -435,6 +435,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 #footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="article">
 <div id="header">
@@ -458,7 +459,7 @@ the existing knowledge of the user.</p>
 <table>
 <tr>
 <td class="icon">
-<div class="title">Tip</div>
+<i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
 <strong class="guideline12.1">Guideline 12.1</strong><br>
@@ -478,7 +479,7 @@ drop support, keyboard navigation, selection behaviour, etc.)</p>
 <table>
 <tr>
 <td class="icon">
-<div class="title">Tip</div>
+<i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
 <strong class="guideline12.2">Guideline 12.2</strong><br>
@@ -507,7 +508,7 @@ may contribute new actions to the menu, toolbar, and context menu.</p>
 <table>
 <tr>
 <td class="icon">
-<div class="title">Tip</div>
+<i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
 <strong class="guideline13.1">Guideline 13.1</strong><br>
@@ -557,8 +558,8 @@ IProjectActionFilter.java.</p>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code class="language-java" data-lang="java">public interface IProjectActionFilter extends IResourceActionFilter {
-	public static final String NATURE = "nature";
-	public static final String OPEN = "open";
+    public static final String NATURE = "nature";
+    public static final String OPEN = "open";
 }</code></pre>
 </div>
 </div>
@@ -566,7 +567,7 @@ IProjectActionFilter.java.</p>
 <table>
 <tr>
 <td class="icon">
-<div class="title">Tip</div>
+<i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
 <strong class="guideline13.2">Guideline 13.2</strong><br>
@@ -599,7 +600,7 @@ reveal the resource in the navigator.</p>
 <table>
 <tr>
 <td class="icon">
-<div class="title">Tip</div>
+<i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
 <strong class="guideline13.3">Guideline 13.3</strong><br>
@@ -633,7 +634,7 @@ services from the Core Resources Management plugin.</p>
 <table>
 <tr>
 <td class="icon">
-<div class="title">Tip</div>
+<i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
 <strong class="guideline14.1">Guideline 14.1</strong><br>
@@ -653,7 +654,7 @@ will fit in the status line of Eclipse.</p>
 <table>
 <tr>
 <td class="icon">
-<div class="title">Tip</div>
+<i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
 <strong class="guideline14.2">Guideline 14.2</strong><br>
@@ -674,7 +675,7 @@ This is done by adding an extension to the plug-in registry.</p>
 <table>
 <tr>
 <td class="icon">
-<div class="title">Tip</div>
+<i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
 <strong class="guideline14.3">Guideline 14.3</strong><br>
@@ -698,12 +699,12 @@ an Eclipse View</a>.</p>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code class="language-java" data-lang="java">public interface IMarkerActionFilter extends IActionFilter {
-	public static final String TYPE = "type";
-	public static final String SUPER_TYPE = "superType";
-	public static final String PRIORITY = "priority";
-	public static final String SEVERITY = "severity";
-	public static final String DONE = "done";
-	public static final String MESSAGE = "message";
+    public static final String TYPE = "type";
+    public static final String SUPER_TYPE = "superType";
+    public static final String PRIORITY = "priority";
+    public static final String SEVERITY = "severity";
+    public static final String DONE = "done";
+    public static final String MESSAGE = "message";
 }</code></pre>
 </div>
 </div>
@@ -711,7 +712,7 @@ an Eclipse View</a>.</p>
 <table>
 <tr>
 <td class="icon">
-<div class="title">Tip</div>
+<i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
 <strong class="guideline14.4">Guideline 14.4</strong><br>
@@ -747,7 +748,7 @@ that gives a detailed description of the selected item in the Task view.</p>
 <table>
 <tr>
 <td class="icon">
-<div class="title">Tip</div>
+<i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
 <strong class="guideline14.5">Guideline 14.5</strong><br>
@@ -931,7 +932,7 @@ plug-in.</p>
 <table>
 <tr>
 <td class="icon">
-<div class="title">Tip</div>
+<i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
 <strong class="guideline15.1">Guideline 15.1</strong><br>
@@ -951,7 +952,7 @@ will blur the location of customization, and confuse the user.</p>
 <table>
 <tr>
 <td class="icon">
-<div class="title">Tip</div>
+<i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
 <strong class="guideline15.2">Guideline 15.2</strong><br>
@@ -974,7 +975,7 @@ preference pages should be adopted.</p>
 <table>
 <tr>
 <td class="icon">
-<div class="title">Tip</div>
+<i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
 <strong class="guideline15.3">Guideline 15.3</strong><br>
@@ -1002,7 +1003,7 @@ page is made visible.</p>
 <table>
 <tr>
 <td class="icon">
-<div class="title">Tip</div>
+<i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
 <strong class="guideline15.4">Guideline 15.4</strong><br>
@@ -1024,7 +1025,7 @@ itself.</p>
 <table>
 <tr>
 <td class="icon">
-<div class="title">Tip</div>
+<i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
 <strong class="guideline15.5">Guideline 15.5</strong><br>
@@ -1126,7 +1127,7 @@ set, or view to the Resource perspective. For more information, refer to
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-12-21 21:08:13 UTC
+Last updated 2022-12-22 10:13:55 UTC
 </div>
 </div>
 </body>
